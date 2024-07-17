@@ -189,7 +189,6 @@ nav a {
         margin-top: -10px; /* Adjust margin to align with parent */
     }
 }
-
 /* Hero Section */
 #pehla {
   position: relative;
@@ -212,16 +211,15 @@ nav a {
   margin: 0 auto;
   padding: 20px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
-  
 }
 
+/* Base styles for large screens */
 .pehla-content h1 {
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #fff;
-  white-space: nowrap;
-  font-weight: bold;
+  white-space: nowrap; /* Ensure text does not wrap */
 }
 
 .pehla-content p {
@@ -229,6 +227,57 @@ nav a {
   margin-bottom: 20px;
   color: #fff;
   text-transform: uppercase;
+}
+
+/* Media query for medium-sized screens */
+@media (max-width: 992px) {
+  .pehla-content h1 {
+    font-size: 40px; /* Decrease font size for medium screens */
+    margin-bottom: 8px; /* Adjust margin */
+  }
+
+  .pehla-content p {
+    font-size: 14px; /* Decrease font size for medium screens */
+    margin-bottom: 16px; /* Adjust margin */
+  }
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .pehla-content h1 {
+    font-size: 28px; /* Further decrease font size for small screens */
+    margin-bottom: 6px; /* Further adjust margin */
+  }
+
+  .pehla-content p {
+    font-size: 8px; /* Further decrease font size for small screens */
+    margin-bottom: 12px; /* Further adjust margin */
+  }
+}
+
+/* Media query for very small screens (width <= 300px) */
+@media (max-width: 300px) {
+  .pehla-content h1 {
+    font-size: 20px; /* Adjust font size for very small screens */
+    margin-bottom: 4px; /* Adjust margin */
+  }
+
+  .pehla-content p {
+    font-size: 2px; /* Adjust font size for very small screens */
+    margin-bottom: 10px; /* Adjust margin */
+  }
+}
+
+@media (max-width: 200px) {
+  .pehla-content h1 {
+    font-size: 15px; /* Adjust font size for very small screens */
+    margin-bottom: 4px; /* Adjust margin */
+  }
+
+  .pehla-content p {
+    font-size: 1px; /* Adjust font size for very small screens */
+    margin-bottom: 10px; /* Adjust margin */
+  }
 }
 
 .button {
@@ -244,8 +293,7 @@ nav a {
 .button:hover {
   background-color: darkblue;
 }
-
-/* Background Overlay */
+/* Background Overlay - visible on desktop */
 #pehla::before {
   content: '';
   position: absolute;
@@ -256,6 +304,7 @@ nav a {
   background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency as needed */
   z-index: 0; /* Behind the content */
 }
+
 /* Keyframe Animation */
 @keyframes move {
   from {
@@ -271,7 +320,6 @@ nav a {
   white-space: nowrap;
 }
 
-
 #moving-text .con {
   display: inline-block;
   animation: move 20s linear infinite; /* Apply animation to each .con element */
@@ -282,11 +330,6 @@ nav a {
   display: inline-block;
   color: rgb(255, 255, 255);
   margin: 0; /* Remove default margins */
-}
-
-#moving-text {
-  overflow-x: auto;
-  white-space: nowrap;
 }
 
 #moving-text::-webkit-scrollbar {
@@ -307,8 +350,6 @@ nav a {
   display: inline-block;
   color: rgba(255, 255, 255, 0.278);
   background-color: rgba(245, 245, 220, 0);
-  
-  
 }
 
 #gola {
@@ -318,6 +359,15 @@ nav a {
   display: inline-block;
   background-color: rgba(65, 105, 225, 0.747);
   margin: 0 10px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+
+
+  #moving-text {
+    display: none; /* Hide moving text animation on mobile */
+  }
 }
 
 
@@ -348,6 +398,7 @@ nav a {
     width: 50px;
   }
 }
+
 
 
 
