@@ -1326,35 +1326,6 @@ nav a {
 
 
 
-nav a {
-  color: #FFFFFF;
-  text-decoration: none;
-  transition: color 0.2s ease;
-  padding: 10px 15px; /* Adjusted padding */
-  border-radius: 8px; /* Rounded corners */
-  background-image: linear-gradient(to right, #660033, #550022);
-  background-size: 100% 2px;
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  white-space: nowrap;
-}
-
-
-
-nav ul ul {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #660033;
-  padding: 10px;
-  display: none; /* Initially hidden */
-  flex-wrap: wrap;
-  justify-content: space-between;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
 
 
 
