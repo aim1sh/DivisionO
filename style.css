@@ -45,115 +45,125 @@ header {
 }
 
 .navbar-toggle {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 24px;
-  cursor: pointer;
-  margin-left: auto;
-  display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto;
+    display: none; /* Hidden by default */
 }
 
 /* Navigation */
 nav {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
+    list-style: none;
+    display: flex;
 }
 
 nav li {
-  position: relative;
-  margin-right: 15px;
+    position: relative;
+    margin-right: 15px;
 }
 
 nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 10px;
-  transition: background-size 0.2s ease, color 0.2s ease;
-  background-image: linear-gradient(to right, #660033, #550022);
-  background-size: 100% 2px;
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-size 0.2s ease, color 0.2s ease;
+    background-image: linear-gradient(to right, #660033, #550022);
+    background-size: 100% 2px;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    display: block; /* Ensure links are block elements */
 }
 
 nav a:hover {
-  background-size: 100% 100%;
+    background-size: 100% 100%;
 }
 
 nav ul ul {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #660033;
-  padding: 10px;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  z-index: 999;
+    position: absolute;
+    top: calc(100% + 10px); /* Position below parent item */
+    left: 0;
+    background-color: #660033;
+    padding: 10px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    max-width: 200px; /* Limit the maximum width of dropdown menu */
 }
 
 nav li:hover > ul {
-  display: flex;
-  opacity: 1;
+    display: flex;
+    flex-direction: column; /* Ensure dropdown items are stacked vertically */
+    opacity: 1;
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-  header {
-      flex-direction: column; /* Stack items vertically */
-      align-items: stretch; /* Stretch items vertically */
-  }
+    header {
+        flex-direction: column; /* Stack items vertically */
+        align-items: stretch; /* Stretch items vertically */
+    }
 
-  .navbar-toggle {
-      display: block; /* Display toggle button */
-  }
+    .logo {
+        padding: 10px; /* Add padding to logo for spacing */
+    }
 
-  nav {
-      position: absolute;
-      top: 100%; /* Position below header */
-      left: 0;
-      width: 100%;
-      background-color: #660033;
-      flex-direction: column; /* Stack items vertically */
-      display: none; /* Initially hide navigation */
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-      z-index: 999;
-  }
+    .navbar-toggle {
+        display: block; /* Display toggle button */
+    }
 
-  nav.show {
-      display: flex; /* Show navigation when 'show' class is added */
-  }
+    nav {
+        position: absolute;
+        top: calc(100% + 10px); /* Adjust top position to not overlap header */
+        left: 0;
+        width: 100%;
+        background-color: #660033;
+        flex-direction: column; /* Stack items vertically */
+        display: none; /* Initially hide navigation */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        z-index: 999;
+    }
 
-  nav ul {
-      flex-direction: column; /* Stack items vertically */
-  }
+    nav.show {
+        display: flex; /* Show navigation when 'show' class is added */
+    }
 
-  nav li {
-      margin-right: 0;
-      margin-bottom: 10px; /* Adjust spacing */
-  }
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+    }
 
-  nav a {
-      padding: 10px; /* Adjust padding */
-  }
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Adjust spacing */
+    }
 
-  nav ul ul {
-      position: static; /* Adjust dropdown position */
-      display: none;
-      opacity: 1;
-      background-color: transparent;
-      padding: 0;
-      box-shadow: none;
-  }
+    nav a {
+        padding: 12px 15px; /* Increased padding for better touchability */
+    }
+
+    nav ul ul {
+        position: static; /* Adjust dropdown position */
+        display: none;
+        opacity: 1;
+        background-color: transparent;
+        padding: 0;
+        box-shadow: none;
+        max-width: 100%; /* Ensure dropdown menu can expand full width */
+        border-top: 2px solid #fff; /* Add a top border to visually separate from main menu */
+    }
 }
+
 
 /* Hero Section */
 #pehla {
