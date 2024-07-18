@@ -223,7 +223,7 @@ nav a {
 }
 
 .pehla-content p {
-  font-size: 15px;
+  font-size: 8px;
   margin-bottom: 20px;
   color: #fff;
   text-transform: uppercase;
@@ -232,7 +232,7 @@ nav a {
 /* Media query for medium-sized screens */
 @media (max-width: 992px) {
   .pehla-content h1 {
-    font-size: 40px; /* Decrease font size for medium screens */
+    font-size: 12px; /* Decrease font size for medium screens */
     margin-bottom: 8px; /* Adjust margin */
   }
 
@@ -245,7 +245,7 @@ nav a {
 /* Media query for small screens */
 @media (max-width: 768px) {
   .pehla-content h1 {
-    font-size: 28px; /* Further decrease font size for small screens */
+    font-size: 6px; /* Further decrease font size for small screens */
     margin-bottom: 6px; /* Further adjust margin */
   }
 
@@ -258,7 +258,7 @@ nav a {
 /* Media query for very small screens (width <= 300px) */
 @media (max-width: 300px) {
   .pehla-content h1 {
-    font-size: 20px; /* Adjust font size for very small screens */
+    font-size: 6px; /* Adjust font size for very small screens */
     margin-bottom: 4px; /* Adjust margin */
   }
 
@@ -270,7 +270,7 @@ nav a {
 
 @media (max-width: 200px) {
   .pehla-content h1 {
-    font-size: 15px; /* Adjust font size for very small screens */
+    font-size: 6px; /* Adjust font size for very small screens */
     margin-bottom: 4px; /* Adjust margin */
   }
 
