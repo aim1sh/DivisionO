@@ -540,12 +540,12 @@ nav a {
 
 .counter {
   text-align: center;
-  padding: 30px;
+  padding: 20px;
   background-color: var(--maroon); /* Royal blue background */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -572,7 +572,7 @@ nav a {
 }
 
 .counter i {
-  font-size: 2em;
+  font-size: 1.5em;
   color: var(--toastmasters-yellow); /* Toastmasters yellow */
 }
 
@@ -605,9 +605,27 @@ nav a {
   }
 }
 
-
 /* Responsive Design */
 @media (max-width: 768px) {
+
+
+  .counter {
+    width: 150px; /* Further decreased width for smaller screens */
+    height: 150px; /* Further decreased height for smaller screens */
+    padding: 15px; /* Adjusted padding */
+  }
+  .counter p {
+    font-size: 0.8em; /* Decreased font size */
+    margin-top: 8px; /* Adjusted margin */
+  }
+  .counter .count {
+    font-size: 2em; /* Adjusted font size */
+  }
+
+  .counter i {
+    font-size: 1.2em; /* Adjusted font size */
+  }
+
 
     .mission .container {
       max-width: 90%;
@@ -639,7 +657,7 @@ nav a {
     .mission .mission-body li::before {
       left: -20px;
     }
-  }
+}
   
   @media (max-width: 480px) {
     .mission .container {
