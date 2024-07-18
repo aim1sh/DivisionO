@@ -189,7 +189,6 @@ nav a {
         margin-top: -10px; /* Adjust margin to align with parent */
     }
 }
-
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   /* Ensure header is stacked vertically */
