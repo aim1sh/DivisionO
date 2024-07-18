@@ -151,14 +151,37 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  var menuToggle = document.getElementById('js-navbar-toggle');
-  var menu = document.getElementById('js-menu');
+const toggleButton = document.getElementById('js-navbar-toggle');
+const menu = document.getElementById('js-menu');
 
-  menuToggle.addEventListener('click', function() {
-      menu.classList.toggle('show');
-  });
+toggleButton.addEventListener('click', function() {
+    menu.classList.toggle('open');
 });
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+    if (!menu.contains(event.target) && !toggleButton.contains(event.target)) {
+        menu.classList.remove('open');
+    }
+});
+
+// Toggle submenu visibility
+const menuItems = document.querySelectorAll('nav > ul > li');
+
+menuItems.forEach(function(item) {
+    item.addEventListener('click', function() {
+        if (window.innerWidth <= 991) {
+            const isOpen = this.classList.contains('open');
+            menuItems.forEach(function(otherItem) {
+                otherItem.classList.remove('open');
+            });
+            if (!isOpen) {
+                this.classList.add('open');
+            }
+        }
+    });
+});
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
