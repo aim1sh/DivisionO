@@ -1626,7 +1626,7 @@ header nav a {
   justify-content: center; /* center the content horizontally */
   align-items: center; /* center the content vertically */
   height: 100%; /* make the div cover the full height of its parent */
-  font-size: 40px; /* make the text size bigger */
+  font-size: 30px; /* make the text size bigger */
   font-weight: bold; /* make the text bold */
 }
 
@@ -1645,8 +1645,13 @@ header nav a {
   justify-content: center; /* center the content horizontally */
   align-items: center; /* center the content vertically */
   height: 100%; /* make the div cover the full height of its parent */
-  font-size: 40px; /* make the text size bigger */
+  font-size: 30px; /* make the text size bigger */
   font-weight: bold; /* make the text bold */
+}
+
+#CGD-awards {
+  font-size: 8px; /* Adjust the font size as needed */
+  line-height: 1.4; /* Adjust the line height as needed */
 }
 
 
