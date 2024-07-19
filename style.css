@@ -1778,11 +1778,14 @@ header nav a {
 
 
 
+
 .headerPR {
   text-align: center; /* center the contents of the header */
   margin-bottom: 20px; /* add some space between the header and the rest of the content */
   height:25vh; /* make the header cover the full height of the viewport */
+  padding: 10px 0; /* Adjust padding as needed */
 }
+
 
 .PR-resources {
   background-color: #660033; /* true maroon background color */
@@ -1792,7 +1795,7 @@ header nav a {
   justify-content: center; /* center the content horizontally */
   align-items: center; /* center the content vertically */
   height: 100%; /* make the div cover the full height of its parent */
-  font-size: 40px; /* make the text size bigger */
+
   font-weight: bold; /* make the text bold */
 }
 
