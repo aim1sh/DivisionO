@@ -1777,31 +1777,25 @@ header nav a {
 }
 
 
-
-
 .headerPR {
-  text-align: center; /* Center the contents horizontally */
-  margin-bottom: 20px; /* Add space between the header and the rest of the content */
-  height: 25vh; /* Cover the full height of the viewport */
-  padding: 10px 0; /* Adjust padding as needed */
-  position: relative; /* Positioning context for absolutely positioned content */
+  text-align: center; /* center the contents of the header */
+  margin-bottom: 20px; /* add some space between the header and the rest of the content */
+  height:40vh; /* make the header cover the full height of the viewport */
+  
 }
 
 .PR-resources {
-  background-color: #660033; /* True maroon background color */
-  color: #FFFFFF; /* White text color for better readability */
-  padding: 20px; /* Increase padding to create more separation */
-  display: flex; /* Use flexbox to center the content vertically */
-  justify-content: center; /* Center the content horizontally */
-  align-items: flex-end; /* Align content to the bottom */
-  height: 100%; /* Cover the full height of its parent */
-  font-size: 30px;
-  margin: 0; /* Ensure no default margin */
-  font-weight: bold; /* Make the text bold */
-  position: absolute; /* Position absolutely within the .headerPR */
-  bottom: 0; /* Align to the bottom of .headerPR */
-  width: 100%; /* Full width */
+  background-color: #660033; /* true maroon background color */
+  color: #FFFFFF; /* white text color for better readability */
+  padding: 10px; /* add some padding to make the background color visible */
+  display: flex; /* use flexbox to center the content vertically */
+  justify-content: center; /* center the content horizontally */
+  align-items: center; /* center the content vertically */
+  height: 100%; /* make the div cover the full height of its parent */
+  font-size: 30px; /* make the text size bigger */
+  font-weight: bold; /* make the text bold */
 }
+
 
 
 /* Media Queries for Responsiveness */
